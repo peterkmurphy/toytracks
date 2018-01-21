@@ -18,7 +18,7 @@ The first version of the code herein was originally build from [Prelang](https:/
 [Rails Composer](https://github.com/RailsApps/rails-composer) was broken in multiple ways.
 
 
-
+`Website <http://website.com>`_ 	[http://website.com Website] 	http://website.com[Website]
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
