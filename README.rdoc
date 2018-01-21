@@ -1,4 +1,21 @@
-== README
+== The toytracks README 
+
+This is the README file for "Toys on Tracks", a Ruby on Rails website
+for selling files. To get it going, please do the following:
+
+* Install Rails version 4.*x*
+* Install rbenv
+* Install Git
+* Execute the following code at the command line:
+
+    git clone https://github.com/peterkmurphy/toytracks.git
+    cd toytracks
+    ./prelang-init
+
+
+
+
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
