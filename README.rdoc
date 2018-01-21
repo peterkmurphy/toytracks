@@ -20,6 +20,8 @@ The first version of the code herein was originally build from [Prelang](https:/
 
 `Website <http://website.com>`_ 	[http://website.com Website] 	http://website.com[Website]
 
+{Killer question}[http://http://stackoverflow.com/questions/2230954/is-there-any-way-to-easily-link-a-file-in-rdoc]
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
