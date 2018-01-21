@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <link rel="shortcut icon" href="/train.ico">
   <title>Toytracks</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 <meta name="viewport" content="width=device-width, initial-scale=1"/></head>
 <body>
+<div class="container">
 <%= render partial: "elements/navbar" %>
 <%= bootstrap_flash %>
 
 
 <%= yield %>
-
+<div class="navbar navbar-default navbar-fixed-bottom">
+<div class="container">
+<p>
+   Copyright © Peter Murphy 2018. Powered by <a href="http://rubyonrails.org/">Ruby on Rails</a>. 
+   Uses imagery from <a href="https://thenounproject.com/walkingfearless/uploads/">João Miranda</a>
+   courtesy of <a href="https://thenounproject.com/">The Noun Project</a>. 
+</p>
+</div>
+</div>
+</div>
 </body>
 </html>
