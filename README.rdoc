@@ -15,12 +15,8 @@ for selling files. To get it going, please do the following:
 * Something something Heroku.
 
 The first version of the code herein was originally build from {Prelang}[https://prelang.com/aci/12680/generated], since
-{Rails Composer}[https://github.com/RailsApps/rails-composer] was broken in multiple ways.
-
-
-`Website <http://website.com>`_ 	[http://website.com Website] 	http://website.com[Website]
-
-{Killer question}[http://http://stackoverflow.com/questions/2230954/is-there-any-way-to-easily-link-a-file-in-rdoc]
+{Rails Composer}[https://github.com/RailsApps/rails-composer] is broken in multiple ways. (Trying to get a model of
+code where Devise works, and didn't seem to work!) 
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
