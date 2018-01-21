@@ -3,7 +3,7 @@
 This is the README file for "Toys on Tracks", a Ruby on Rails website
 for selling files. To get it going, please do the following:
 
-* Install Rails version 4.*x*
+* Install Rails version 4. *x*
 * Install rbenv
 * Install Git
 * Execute the following code at the command line:
@@ -12,7 +12,10 @@ for selling files. To get it going, please do the following:
     cd toytracks
     ./prelang-init
 
+* Something something Heroku.
 
+The first version of the code herein was originally build from [Prelang](https://prelang.com/aci/12680/generated), since
+[Rails Composer](https://github.com/RailsApps/rails-composer) was broken in multiple ways.
 
 
 
