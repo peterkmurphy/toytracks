@@ -115,9 +115,7 @@ Where the “so that” clause is optional. All user stories are grouped into ep
 
 ## Entities and Relationships
 
-From the user stories above, we can derive the following entities for the Toys on Tracks domain. Please note in practice that there would be an additional Transaction entity. This would record the results of a transaction between a Buyer and a Seller, and would be stored in addition to a Sale entity. The reason for this is that the information for Buyers and Sellers – such as their addresses, emails and phone numbers - often change over their lifetime, and Transaction would provide a permanent record of their values at the time of the transaction. For the purpose of the project, the ER model stores the current addresses and phone numbers for Users, but do not record changes or earlier values. Without Transaction, it could be impossible to access this information.  
-
-In addition, there are additional constraints on the model that need to be mentioned. For example, a Buyer cannot buy from themselves, or bid on items auctioned by themselves. Trying to mark up the prices on their own items would be both unethical and illegal.
+From the user stories above, we can derive the following entities for the Toys on Tracks domain. 
 
 ### User
 
@@ -135,13 +133,15 @@ This is the other subtype of User: those who can sell items on Toys on Tracks. R
 
 This represents an item being sold by a seller. It represents such information as name, description, category, and photo.
 
-### Sale
+### Transaction
 
-This represents a sale of an Item (or an attempted sale of an Item) to a Buyer.  This information also records the success (or failure) of the Buyer purchasing the Item from the Seller. There are two types of Sales in the system.
+This represents a transaction - a sale, or an attempted sale - of an Item.  This information also records the success (or failure) of the Buyer purchasing the Item from the Seller. There are two types of Transactions in the system.
 
 ### Outright Sale
 
-These are Sales from one Seller to one Buyer at a particular time, at a fixed price. 
+These are Transactions where an Item is sold from one Seller to one Buyer at a particular time, at a fixed price. 
+
+*Note*: in practice, Outright Sale would have an additional constraint: Buyers cannot buy Items from themselves.
 
 ### Auction
 
@@ -150,3 +150,35 @@ An Auction represents an auction on an Item by a Seller, with a starting price, 
 ### Bid
 
 A Bid represents a bid on an Item in an Auction by a Buyer at a particular time.
+
+*Note*: in practice, there would be a constraint on Bid: Buyers cannot bid on items auctioned by themselves. Trying to mark up the prices on their own items would be both unethical and illegal.
+
+### Relationships
+
+A Buyer IS A User.  
+A User MAY BE A Buyer.
+
+A Seller IS A User.  
+A User MAY BE A Seller.
+
+An Item is advertised by ONE Seller.  
+A Seller advertises ZERO OR MORE Items.
+
+A Transaction is an attempted sale of ONE Item.  
+An Item is transacted through ZERO OR MORE Transactions.
+
+A Outright Sale IS A Transaction.  
+A Transaction MAY BE AN Outright Sale.
+
+An Auction IS A Transaction.  
+A Transaction MAY BE AN Auction.
+
+A Outright Sale is an attempted purchase by ONE Buyer.  
+A Buyer attempts to transaction ZERO OR MORE Outright Sales.
+
+A Bid is made on ONE Auction.  
+An Auction is the subject of ZERO OR MORE Bids.
+
+A Bid is made by ONE Buyer.  
+A Buyer makes ZERO OR MORE Bids.
+
