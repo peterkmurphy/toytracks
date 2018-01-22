@@ -1,12 +1,20 @@
-% Project summary
-“Toys on Tracks” (ToT) is a website for people to buy and sell toys. Both purveyors and consumers can register for the site using their email address, and can access the site using a password they chose themselves. 
+# Toys on Tracks - Design Documentation
 
-Users who sell toys (“sellers”) are able to put up items for sale on ToT. They are able to specify such details as name, description and categorization, and even upload photos of their items. Users who buy toys (“buyers”) are able to browse the site, finding toys that match criteria such as categorisation, description, geographic availability, and price. It should go without saying (but sadly needs to be stated) that users can be both buyers and sellers at the same time. A user can be buying toys from one or more sellers, while simultaneously selling toys to other buyers. However, ToT prevents users from selling toys to themselves.
+## Project Summary
 
-When a seller puts an item up for sale, the user can opt to fix the price for an item; the item can be up for sale indefinitely. Alternately, the seller can put the item up for auction. A starting price is chosen, and different buyers can issue increasing bids for the toy. All auctions must be for a limited time, and the buyer who issues the winning bid before the auction ends gets the toy. However, there may be cases where there are no takers on an item; in that case, the seller can choose to auction the item later, or sell it for a fixed price instead. 
+***Toys on Tracks*** (*ToT*) is a website for people to buy and sell toys. Both buyers and sellers can register for the site using their email address, and can access the site using a password chosen by themselves. 
 
-Buyers who decide to purchase an item can pay by credit card. If the payment succeeds, then the buyer is redirected to a “Payment sucessful” screen and a receipt is emailed to both buyer and seller. If the payment fails, then the buyer is just notifed on a screen. (The seller is emailed, however.) For the purpose of the project, the whole matter of “delivery” is abstracted away.
+Users who sell toys (*sellers*) are able to put up items for sale on ToT. They are able to specify such details as name, description and category, and even upload photos of their items. Users who buy toys (*buyers*) are able to browse the site, finding toys that match criteria such as category, description, location, and price. It should be stated that users can be both simultaneously buyers and sellers - although not for the same item.
 
+When a seller puts an item up for sale, the user can opt to fix the price for an toy, which can be up for sale indefinitely. Alternately, the seller can put the item up for auction - albeit for a limited time. A starting price is chosen, and different buyers can issue bids of increasing value for the toy; the buyer who issues the highest bid before the auction ends gets the item. Some auctions, however, may have no bidders, and the seller may choose to close the auction, or sell it for a fixed price instead. 
+
+Buyers who decide to purchase an item can pay by credit card. If the payment succeeds, then the buyer is redirected to a “Payment successful” screen and a receipt is emailed to both buyer and seller. If the payment fails, then the buyer is directed to a “Payment unsuccessful” screen. (Sellers may not be immediately aware of this, but would be notified by email.) 
+
+***Toys on Tracks*** is a simple project that is meant to be a demonstration of Ruby on Rails. There are entire features that would be implemented in a real website:
+
+Delivery: what happens if the seller doesn’t deliver the toy? (Or what if the toy is broken?)
+Reputation: can users – buyers and sellers – have their reputation upvoted and downvoted by other users?
+Reporting and Abuse: Toys on Tracks is a website for toys - dolls, twinkets, games, teddy bears and other items for 18 and under. ToT is not a website for cars, or software, or other things. ToT is also not a website for “toys” an euphemism for 18+ stuff. For these reasons, users have the option of reporting items for sale they find don’t meet the standards of the website. 
 Toys on Tracks is a simple project that is meant to be a demonstration of Ruby on Rails. There are entire features that would be implemented in a real website:
 
 Delivery: what happens if the seller doesn’t deliver the toy? (Or what if the toy is broken?)
