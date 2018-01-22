@@ -10,18 +10,12 @@ When a seller puts an item up for sale, the user can opt to fix the price for an
 
 Buyers who decide to purchase an item can pay by credit card. If the payment succeeds, then the buyer is redirected to a “Payment successful” screen and a receipt is emailed to both buyer and seller. If the payment fails, then the buyer is directed to a “Payment unsuccessful” screen. (Sellers may not be immediately aware of this, but would be notified by email.) 
 
-***Toys on Tracks*** is a simple project that is meant to be a demonstration of Ruby on Rails. There are entire features that would be implemented in a real website:
+***Toys on Tracks*** is a simple project that is meant to be a demonstration of Ruby on Rails. In a **real** website, the following features would be at least *considered* if not *implemented*:
 
-Delivery: what happens if the seller doesn’t deliver the toy? (Or what if the toy is broken?)
-Reputation: can users – buyers and sellers – have their reputation upvoted and downvoted by other users?
-Reporting and Abuse: Toys on Tracks is a website for toys - dolls, twinkets, games, teddy bears and other items for 18 and under. ToT is not a website for cars, or software, or other things. ToT is also not a website for “toys” an euphemism for 18+ stuff. For these reasons, users have the option of reporting items for sale they find don’t meet the standards of the website. 
-Toys on Tracks is a simple project that is meant to be a demonstration of Ruby on Rails. There are entire features that would be implemented in a real website:
+* **Delivery**: how does the seller get the toy to the buyer? Does ToT provide its own shipping and handling? What if the seller doesn’t deliver the toy? Or what if the toy arrives broken?
+* **Reputation**: can buyers and sellers have their reputation up-voted and down-voted by other users?
+* **Reporting and Abuse**: what if ToT users engage in abusive or offensive behavior? How do other users complain? Toys on Tracks is a website for *toys* - dolls, trinkets, games, teddy bears and other items - but not a website for the ***toys*** which one finds at "Adult" shops and Sexpos. Some users may not get the difference. Some may deliberately ignore it. 
 
-Delivery: what happens if the seller doesn’t deliver the toy? (Or what if the toy is broken?)
-Reputation: can users – buyers and sellers – have their reputation upvoted and downvoted by other users?
-Reporting and Abuse: Toys on Tracks is a website for toys - dolls, twinkets, games, teddy bears and other items for 18 and under. ToT is not a website for cars, or software, or other things. ToT is also not a website for “toys” an euphemism for 18+ stuff. For these reasons, users have the option of reporting items for sale they find don’t meet the standards of the website. 
-
-There are also some constraints that would need to be implemented in a real-life situation. Firstly, sellers cannot buy their own items, or even bid on them. If allowed to do so, sellers could up-bid their own items that they have on auction. This would be unfair.
 User Stories
 There are several templates available for user stories, but the most common one is:
 
