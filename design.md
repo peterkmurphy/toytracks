@@ -1,4 +1,4 @@
-Project summary
+% Project summary
 “Toys on Tracks” (ToT) is a website for people to buy and sell toys. Both purveyors and consumers can register for the site using their email address, and can access the site using a password they chose themselves. 
 
 Users who sell toys (“sellers”) are able to put up items for sale on ToT. They are able to specify such details as name, description and categorization, and even upload photos of their items. Users who buy toys (“buyers”) are able to browse the site, finding toys that match criteria such as categorisation, description, geographic availability, and price. It should go without saying (but sadly needs to be stated) that users can be both buyers and sellers at the same time. A user can be buying toys from one or more sellers, while simultaneously selling toys to other buyers. However, ToT prevents users from selling toys to themselves.
