@@ -96,8 +96,6 @@ Where the “so that” clause is optional. All user stories are grouped into ep
 14. As a seller, I want to be able to withdraw an item from auction if no bids have been made on it.
 15. As a seller, I want the pages for items I have withdrawn or sold off or auctioned off not to be visible to any other buyer or seller. In particular, they should be removed from the home page's listing, and should also be removed from my listing of items for sale. 
 
-An [example](http://url.com/ "Title")
-
 *Note* 1: a lot of the ideas for the data each item needs comes from the [eBay Field Index API Reference](https://developer.ebay.com/devzone/xml/docs/Reference/eBay/fieldindex.html ).
 
 *Note* 2: these user stories assume that each item can only be sold once, and that toy sellers are not making nor selling multiple copies of the same toy.
@@ -114,7 +112,7 @@ An [example](http://url.com/ "Title")
 8. As a seller, I want to have the money from a successful sale deposited in my bank account. 
 9. As a seller, I want to be notified if a sale is successful or a failure. 
 10. As a seller, I want to have the option of putting a toy up for sale again if there are any issues with sale. 
- 
+
 Entities and Relationships
 From the user stories above, we can derive the following entities for the domain for Toys on Trains.
 
