@@ -113,41 +113,40 @@ Where the “so that” clause is optional. All user stories are grouped into ep
 9. As a seller, I want to be notified if a sale is successful or a failure. 
 10. As a seller, I want to have the option of putting a toy up for sale again if there are any issues with sale. 
 
-Entities and Relationships
-From the user stories above, we can derive the following entities for the domain for Toys on Trains.
+## Entities and Relationships
 
-User
+From the user stories above, we can derive the following entities for the Toys on Tracks domain. Please note in practice that there would be an additional Transaction entity. This would record the results of a transaction between a Buyer and a Seller, and would be stored in addition to a Sale entity. The reason for this is that the information for Buyers and Sellers – such as their addresses, emails and phone numbers - often change over their lifetime, and Transaction would provide a permanent record of their values at the time of the transaction. For the purpose of the project, the ER model stores the current addresses and phone numbers for Users, but do not record changes or earlier values. Without Transaction, it could be impossible to access this information.  
 
-This represents registered users in the system – people who can log in and browse items in the system. Information contains includes such things as Gender and Email Address (and Privacy settings for same). 
+In addition, there are additional constraints on the model that need to be mentioned. For example, a Buyer cannot buy from themselves, or bid on items auctioned by themselves. Trying to mark up the prices on their own items would be both unethical and illegal.
 
-Buyer
+### User
 
-This is one of the subtypes of User that can buy items on Toys on Tracks. To register as a buyer, Users must provide a credit card, and Buyer information is basically abbreviated credit card information. It is unnecessary, obtrusive and insecure for Buyers to be forced to store their full credit card information.
+This represents registered users in the system – people who can log in and browse items in the system. Information includes such things as gender and email address (and their privacy settings). 
 
-Seller
+### Buyer
 
-This is the other subtype of User, but those who can sell items on Toys on Tracks. Registering as a seller means disclosing one’s bank account details, and Seller information is the bank account information. This information is unabbreviated, because the full details are necessary for the seller to receive funds, and because these details can’t be used to transfer funds from the seller’s account.
+This is one of the subtypes of User that can buy items on ToT. To register as a buyer, Users must provide a credit card to register, and Buyer information would include such stuff as abbreviated credit card information. It is unnecessary, obtrusive and insecure for Buyers to be forced to store their full credit card information.
+
+### Seller
+
+This is the other subtype of User: those who can sell items on Toys on Tracks. Registering as a seller means verifying the seller’s bank account details, so Seller information includes bank account data. (While this information is private, it is unabbreviated; full details are necessary for sellers to receive funds, and these details can’t be used to transfer funds away from a seller’s account.
  
-Item
+### Item
 
-This represents an item being sold by a seller. It represents such information as name, description, category, photo, and the time the item was advertised (or perhaps withdrawn)
+This represents an item being sold by a seller. It represents such information as name, description, category, and photo.
 
-Sale
+### Sale
 
-This represents the sale of an Item (or an attempted sale of an Item) to a Buyer.  This information also records the success (or failure) of transferring information from the Buyer to the Seller. There are two types of Sales in the system.
+This represents a sale of an Item (or an attempted sale of an Item) to a Buyer.  This information also records the success (or failure) of the Buyer purchasing the Item from the Seller. There are two types of Sales in the system.
 
-Outright Sale
+### Outright Sale
 
 These are Sales from one Seller to one Buyer at a particular time, at a fixed price. 
 
-Auction
+### Auction
 
 An Auction represents an auction on an Item by a Seller, with a starting price, for a fixed point of time. There may be several bids before the Auction expires. However, there may be auctions where no Buyer makes a bid, and thus no transaction occurs.
 
-Bid
+### Bid
 
-A Bid represents a bid on an item in an Auction by a Buyer
-
-Note: in practice, there would be an additional Transaction entity, which recorded the results of a transaction between buyer and seller in addition to a Sale entity. The reason for this is that the information for buyers and sellers – such as addresses, emails and phone numbers - often change over their lifetime. For the benefit of ToT (and any staff visiting from the ATO and Police), and there needs to be a permanent record of their values at the time the transactions happened. The existing Entity model refer to the current addresses and phone numbers of Users, but do not store earlier records; without Transaction, it would often be impossible to access this information.  
-
-In practice, there would be additional constraints in the system, such as that a Buyer cannot buy from themselves, or bid on items auctioned by themselves. Trying to mark up their own price would probably be illegal.
+A Bid represents a bid on an Item in an Auction by a Buyer at a particular time.
