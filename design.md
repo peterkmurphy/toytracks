@@ -14,17 +14,18 @@ Buyers who decide to purchase an item can pay by credit card. If the payment suc
 
 * **Delivery**: how does the seller get the toy to the buyer? Does ToT provide its own shipping and handling? What if the seller doesn’t deliver the toy? Or what if the toy arrives broken?
 * **Reputation**: can buyers and sellers have their reputation up-voted and down-voted by other users?
-* **Reporting and Abuse**: what if ToT users engage in abusive or offensive behavior? How do other users complain? Toys on Tracks is a website for *toys* - dolls, trinkets, games, teddy bears and other items - but not a website for the ***toys*** which one finds at "Adult" shops and Sexpos. Some users may not get the difference. Some may deliberately ignore it. 
+* **Reporting and Abuse**: what if ToT users engage in abusive or offensive behavior? How do other users complain? Toys on Tracks is a website for *toys* - dolls, trinkets, games, teddy bears and other items - but not a website for the ***toys*** which one finds at "Adult" shops and Sexpos. Some users may not get the difference. Some may deliberately ignore it. They need to be taught not to do that sort of thing.
 
-User Stories
-There are several templates available for user stories, but the most common one is:
+## User Stories
 
-As a <type of user>, I want <some goal or objective> [so that <benefit, value>]
+I am providing user stories for the features I am delivering in the project (rather than the “nice-to-have” features such as “Delivery” and “Reputation”). As much as possible, I decided to express user stories using the following template:
 
-Where the “so that” clause is optional. I have attempted to group user stories into epics. I have also supplied acceptance criteria for user stories.
+As a *type of user*, I want *some goal or objective* [so that *some benefit or value accrues*].
 
-The user stories I have provided are only for the features I am delivering and presenting in the next week. I have not provided user stories for the “nice-to-have” features such as “Delivery” and “Reputation”. 
-As a user I want to supply information about myself so that other users know who I am.
+Where the “so that” clause is optional. All user stories are grouped into epics. 
+
+### As a user I want to supply information about myself so that other users know who I am.
+
 1. As a user, I want to register using my email address.
 2. As a user, I want to choose my own password. 
 3. As a user, I want to give myself a unique identifier – a name – so that others can identity me on the site, and I can identify them in turn. This may or may not be my legal name; it is my own choice to share it with others.
@@ -37,15 +38,15 @@ As a user I want to supply information about myself so that other users know who
 10. As a user, I would like to be able to supply descriptions of myself and upload photos of myself, so that people know who I am dealing with. 
 11. As a user, I would like to be able to have my own page on the site, so so that I can display my identifier, my description and photo, and other identifiers I choose to make public as well. 
 12. As a user, I would like to be able to change all information I have supplied of myself for public display, with the understanding that ToT would keep a record of all changes for legal purposes. In particular, I should be able to change:
-a) My email;
-b) My password;
-c) My unique identifying name and/or legal name;
-d) My gender;
-e) My postal address;
-f) My phone number;
-g) Privacy settings for phone number, email address and postal address;
-h) A description of myself; and,
-i) A photo of myself (assuming I have supplied it). In particular, if I have a photo, I should be able to change it, delete it, and resupply another photo (or the same) at any time.
+    a) My email;
+    b) My password;
+    c) My unique identifying name and/or legal name;
+    d) My gender;
+    e) My postal address;
+    f) My phone number;
+    g) Privacy settings for phone number, email address and postal address;
+    h) A description of myself; and,
+    i) A photo of myself (assuming I have supplied it). In particular, if I have a photo, I should be able to change it, delete it, and resupply another photo (or the same) at any time.
 
 The following additional user stories would be implemented in a live situation, but are not being implemented in the project.
 
