@@ -26,35 +26,12 @@ it is the one with the Gemfile inside it. Then execute the following code at the
 For more instructions, please see 
 {Getting Started with Rails 4.x on Heroku}[https://devcenter.heroku.com/articles/getting-started-with-rails4]
 
-Something something Heroku.
+=== Notes
 
-The first version of the code herein was originally build from {Prelang}[https://prelang.com/aci/12680/generated], since
-{Rails Composer}[https://github.com/RailsApps/rails-composer] is broken in multiple ways. (Trying to get a model of
-code where Devise works, and didn't seem to work!) 
+Code for this website was initially generated using {Prelang}[https://prelang.com/aci/12680/generated], and then
+modified afterwards to fit the needs of the {Design documentation}[https://github.com/peterkmurphy/toytracks/blob/master/design.md]. While Prelang has been described as, since
+While Prelang has been described as "abandonware", it was easier to use than 
+{Rails Composer}[https://github.com/RailsApps/rails-composer]. Composer (as of January 2018), consistently produces buggy-does-not-start
+code, especially when {Devise}[https://github.com/plataformatec/devise] is specified to be part of the package. Version conflicts,
+missing variables, it was all happening!  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
