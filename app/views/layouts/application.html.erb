@@ -3,7 +3,7 @@
 <head>
 
   <link rel="shortcut icon" href="/train.ico">
-  <title>Toytracks</title>
+  <title><%= content_for?(:title) ? yield(:title) : "Toys on Tracks" %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>

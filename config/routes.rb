@@ -60,6 +60,10 @@ Rails.application.routes.draw do
   #   end
   
   #->Prelang (user_login:devise/stylized_paths)
+
+  get 'thankyou' => 'landings#thankyou'
+  get 'unsuccessful' => 'landings#unsuccessful'
+
   devise_scope :user do
     get    "login"   => "users/sessions#new",         as: :new_user_session
     post   "login"   => "users/sessions#create",      as: :user_session
