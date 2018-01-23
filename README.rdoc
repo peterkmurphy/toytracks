@@ -1,18 +1,32 @@
 == The toytracks README 
 
 This is the README file for "Toys on Tracks", a Ruby on Rails website
-for selling files. To get it going, please do the following:
+for selling files online. These are the instructions for installing it on a
+development machine:
 
-* Install Rails version 4. *x*
-* Install rbenv
-* Install Git
+* Install {Ruby}[https://www.ruby-lang.org/en/] and {Rails}[http://rubyonrails.org/];
+* Install {PostgreSQL}[https://www.postgresql.org/];
+* Install {rbenv}[https://github.com/rbenv/rbenv];
+* Install {Git}[https://git-scm.com/]; and,
 * Execute the following code at the command line:
 
     git clone https://github.com/peterkmurphy/toytracks.git
     cd toytracks
     ./prelang-init
 
-* Something something Heroku.
+For installing to {Heroku}[https://www.heroku.com/], please go to the directory that contains the created Rails app;
+it is the one with the Gemfile inside it. Then execute the following code at the command line:
+
+    heroku login
+    heroku create
+    git push heroku master
+    heroku run rake db:migrate
+
+
+For more instructions, please see 
+{Getting Started with Rails 4.x on Heroku}[https://devcenter.heroku.com/articles/getting-started-with-rails4]
+
+Something something Heroku.
 
 The first version of the code herein was originally build from {Prelang}[https://prelang.com/aci/12680/generated], since
 {Rails Composer}[https://github.com/RailsApps/rails-composer] is broken in multiple ways. (Trying to get a model of
