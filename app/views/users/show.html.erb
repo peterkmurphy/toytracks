@@ -1,0 +1,22 @@
+<h1><%= @user.public_identifier %></h1>
+
+<p><%= @user.description %></p>
+
+<% if @user.is_email_visible %>
+<p><strong>Email</strong>: <%= @user.email %></p>
+<% else %>
+
+<% end %>
+
+<% if @user.is_phone_number_visible %>
+<p><strong>Phone Number</strong>: <%= @user.phone_number %></p>
+<% else %>
+
+<% end %>
+
+<% if @user.is_gender_visible %>
+<p><strong>Gender</strong>: <%= @user.gender %></p>
+<% else %>
+
+<% end %>
+

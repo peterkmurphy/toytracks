@@ -75,4 +75,6 @@ Rails.application.routes.draw do
     get    "account" => "users/registrations#edit",   as: :edit_user_registration
   end
 
+  get 'users/:id' => 'users#show'
+
 end
