@@ -18,3 +18,11 @@
 #->Prelang (env_variables:dotenv)
 # Ignore .env file so sensitive environment variables are not checked into Git.
 .env
+presentation/toyontracks.aux
+presentation/toyontracks.log
+presentation/toyontracks.nav
+presentation/toyontracks.out
+presentation/toyontracks.pdf
+presentation/toyontracks.snm
+presentation/toyontracks.toc
+presentation/toyontracks.vrb
