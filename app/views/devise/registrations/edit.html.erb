@@ -6,11 +6,46 @@
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.label :is_email_visible %> <%= f.check_box :is_email_visible, autocomplete: "off" %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
+
+
+  <div class="field">
+    <%= f.label :public_identifier %><br />
+    <%= f.text_field :public_identifier, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :legal_name %><br />
+    <%= f.text_field :legal_name, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender, autocomplete: "off" %> 
+    <%= f.label :is_gender_visible %>
+    <%= f.check_box :is_gender_visible, autocomplete: "off" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :phone_number %><br />
+    <%= f.text_field :phone_number, autocomplete: "off" %>
+    <%= f.label :is_phone_number_visible %>
+<%= f.check_box :is_phone_number_visible, autocomplete: "off" %>
+</div>
+
+<div class="field">
+<%= f.label :description %><br />
+<%= f.text_area :description, autocomplete: "off" %>
+</div>
+
+
+
+
 
   <div class="field">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
