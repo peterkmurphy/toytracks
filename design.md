@@ -182,3 +182,12 @@ An Auction is the subject of ZERO OR MORE Bids.
 A Bid is made by ONE Buyer.  
 A Buyer makes ZERO OR MORE Bids.
 
+## Wireframes
+
+### The Home Page
+
+![The Home Page](https://raw.githubusercontent.com/peterkmurphy/toytracks/master/img/home.png)
+
+### The Profile Page
+
+![The Profile Page](https://raw.githubusercontent.com/peterkmurphy/toytracks/master/img/profile.png)
