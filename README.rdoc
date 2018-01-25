@@ -29,7 +29,7 @@ For more instructions, please see
 === Notes
 
 Code for this website was initially generated using {Prelang}[https://prelang.com/aci/12680/generated], and then
-modified afterwards to fit the needs of the {Design documentation}[https://github.com/peterkmurphy/toytracks/blob/master/design.md]. 
+modified afterwards to fit the needs of the {design documentation}[https://github.com/peterkmurphy/toytracks/blob/master/design.md]. 
 While Prelang has been described as "abandonware", it was easier to use than 
 {Rails Composer}[https://github.com/RailsApps/rails-composer], which (as of January 2018) is producing buggy-does-not-start
 code, especially when {Devise}[https://github.com/plataformatec/devise] is involved. Version conflicts,
